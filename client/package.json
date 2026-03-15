@@ -1,6 +1,6 @@
 {
   "name": "moodquest-client",
-  "homepage": "https://Sanatasneemazimudin.github.io/MoodQuest",
+  "homepage": ".",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
