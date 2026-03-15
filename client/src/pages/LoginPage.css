@@ -1,0 +1,97 @@
+.login-screen {
+  min-height: 100vh;
+  background: linear-gradient(145deg, #B8D8D0 0%, #E8F4F0 40%, #F5F9F7 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+body.dark .login-screen {
+  background: linear-gradient(145deg, #1A3030 0%, #1A2428 60%, #151E22 100%);
+}
+
+.login-wrap { width: 100%; max-width: 440px; }
+
+.login-card {
+  background: var(--card-bg);
+  border-radius: 28px;
+  padding: 48px 40px;
+  box-shadow: 0 20px 60px rgba(107,156,139,0.18), 0 4px 20px rgba(0,0,0,0.06);
+  position: relative;
+  overflow: hidden;
+  animation: fadeUp 0.5s ease both;
+}
+
+.login-card::before {
+  content: '';
+  position: absolute;
+  top: -60px; right: -60px;
+  width: 200px; height: 200px;
+  background: radial-gradient(circle, rgba(184,216,208,0.35) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.login-logo { text-align: center; margin-bottom: 8px; }
+.logo-icon { font-size: 3.5rem; display: block; margin-bottom: 12px; }
+.login-logo h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  color: var(--sage);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+.login-logo p { color: var(--muted); font-size: 0.95rem; margin-top: 6px; font-weight: 300; }
+
+.login-divider { height: 1px; background: var(--border); margin: 24px 0; }
+
+/* Mode toggle */
+.mode-toggle {
+  display: flex;
+  background: var(--sage-pale);
+  border-radius: 12px;
+  padding: 4px;
+  margin-bottom: 20px;
+  gap: 4px;
+}
+.mode-toggle button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 9px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: transparent;
+  color: var(--muted);
+}
+.mode-toggle button.active {
+  background: var(--sage);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(107,156,139,0.3);
+}
+
+.login-note {
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 20px;
+}
+.link-btn {
+  background: none;
+  border: none;
+  color: var(--sage);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+
+@media (max-width: 480px) {
+  .login-card { padding: 36px 24px; }
+  .login-logo h1 { font-size: 2rem; }
+}

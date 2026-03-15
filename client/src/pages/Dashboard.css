@@ -1,0 +1,90 @@
+.quote-card {
+  background: linear-gradient(135deg, var(--sage-pale), var(--sage-light) 300%);
+  border-left: 4px solid var(--sage);
+  border-radius: var(--radius);
+  padding: 22px 28px;
+  margin-bottom: 20px;
+}
+.quote-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  color: var(--ink);
+  line-height: 1.65;
+  font-style: italic;
+}
+.quote-author {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+/* Stat cards */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.stat-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 22px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+}
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(107,156,139,0.14);
+}
+.stat-icon { font-size: 2.1rem; line-height: 1; }
+.stat-label {
+  font-size: 0.75rem;
+  color: var(--muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+.stat-value {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--sage);
+  line-height: 1.1;
+}
+
+/* Two-column layout */
+.dash-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.chart-wrap {
+  height: 190px;
+  display: flex;
+  align-items: center;
+}
+
+/* Mini challenges */
+.mini-challenges { display: flex; flex-direction: column; gap: 12px; }
+.mini-challenge {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 16px;
+  background: var(--sage-pale);
+  border-radius: 12px;
+}
+.mc-icon { font-size: 1.6rem; line-height: 1; }
+.mc-name { font-weight: 600; font-size: 0.9rem; }
+.mc-pts  { font-size: 0.8rem; color: var(--sage-dark); font-weight: 500; }
+
+@media (max-width: 700px) {
+  .stats-row { grid-template-columns: 1fr 1fr; }
+  .dash-grid  { grid-template-columns: 1fr; }
+}
