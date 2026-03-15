@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/MoodQuest/static/css/main.a31615e2.css",
+    "main.js": "/MoodQuest/static/js/main.a3af9bec.js",
+    "index.html": "/MoodQuest/index.html",
+    "main.a31615e2.css.map": "/MoodQuest/static/css/main.a31615e2.css.map",
+    "main.a3af9bec.js.map": "/MoodQuest/static/js/main.a3af9bec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a31615e2.css",
+    "static/js/main.a3af9bec.js"
+  ]
+}
