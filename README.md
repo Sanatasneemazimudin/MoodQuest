@@ -175,4 +175,4 @@ The `heroku-postbuild` script in `package.json` builds React automatically.
 
 ## Author
 
-**Sana Tasneem Azimudin** — Register Number: 2024503007
+**Sana Tasneem Azimudin** 
